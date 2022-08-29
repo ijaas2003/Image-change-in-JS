@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="BMW.css" class="bike">
+    <link rel="stylesheet" href="	https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+<body>
+    <div class="container" id="bike">
+        <nav>
+            <img src="logo.png" class="logo" alt="">
+            <a href="#" class="btn">TestDrive</a>
+        </nav>
+        <div class="content">
+            <h2>The BMW <span class="auto"></span></h2>
+            <h1>G 310 R</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi, adipisci? Placeat maiores quos totam quae, ad amet officiis quod provident?</p>
+            <h3>Choose your color</h3>
+        </div>
+        <div class="color">
+            <div class="one" id="one" onclick="redbtn()"></div>
+            <div class="two" id="two" onclick="bluebtn()"></div>
+            <div class="three" id="three" onclick="blackbtn()"></div>
+        </div>
+    </div>
+    <script>
+        
+        let bike=document.getElementById("bike");
+        function redbtn()
+        {
+            bike.style.background="url(BMW1.png)";
+        }
+        function bluebtn()
+        {
+            bike.style.background="url(BMW2.png)";
+        }
+        function blackbtn()
+        {
+            bike.style.backgroundImage="url(BMW3.png)";
+        }
+    </script>
+    <script>
+        var Type = new Typed(".auto",
+           {
+               strings:["S1000RR","RR1300"],
+               typeSpeed:100,
+               backSpeed:100,
+               loop:true,
+           });
+    </script>
+    
+</body>
+</html>
